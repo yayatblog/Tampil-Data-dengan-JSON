@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from 'react';
-import './Main.css';
+import React, { Component } from 'react';
 import Axios from 'axios';
+import './Main.css';
+
 
 
 class Main extends Component {
@@ -22,15 +23,17 @@ class Main extends Component {
 
     render() {
         return (
-            <div>
+            <div className="body">
                 <h1 className="title1">Selamat Datang di API Maulana Hidayat</h1>
                 <hr />
                 {this.state.dataApi.map((dat, index) => {
                     return (
-                        <div className="datamain" key={index}>
-                            <p>{dat.name.title}&nbsp;{dat.name.first}&nbsp;{dat.name.last}</p>
+                        <div className="content">
+                            <div className="datamain" key={index}>
+                                <p>{dat.name.title}&nbsp;{dat.name.first}&nbsp;{dat.name.last}</p>
 
-                            <img src={dat.picture.thumbnail} alt="" />
+                                <img src={dat.picture.thumbnail} alt="" />
+                            </div>
                         </div>
                     )
                 })}
@@ -41,3 +44,4 @@ class Main extends Component {
 }
 
 
+export default Main;

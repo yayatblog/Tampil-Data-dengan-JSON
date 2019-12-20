@@ -1,8 +1,25 @@
+.body {
+    background-color: darkslategrey;
+}
 .title1 {
     background-color: lightblue;
     width: 100%;
     height: 50px;
     margin-top: -30px;
     margin: auto;
+    text-align: center;;
+}
+
+.content {
+    background-color: lightcoral;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin:auto;
+}
+.datamain{
+    text-align:center;
+    display: inline;
 }
 
